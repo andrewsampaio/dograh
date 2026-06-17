@@ -96,6 +96,7 @@ services:
     image: ${REGISTRY:-dograhai}/dograh-ui:latest
 
     environment:
+      HOSTNAME: "0.0.0.0"
       BACKEND_URL: "http://api:8000"
       NODE_ENV: "oss"
 
